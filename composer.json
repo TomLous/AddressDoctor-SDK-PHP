@@ -1,12 +1,25 @@
 {
-    "name": "vendor_name/package_name",
-    "description": "description_text",
-    "minimum-stability": "stable",
-    "license": "proprietary",
+    "name": "tlous/addressdoctor-sdk-php-v1",
+    "description": "AddressDoctor SDK for PHP",
+    "keywords": ["addressdoctor", "sdk"],
+    "type": "library",
+    "homepage": "https://github.com/TomLous/AddressDoctor-SDK-PHP",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author's name",
-            "email": "email@example.com"
+            "name": "Tom Lous",
+            "homepage": "https://github.com/TomLous/AddressDoctor-SDK-PHP/contributors"
         }
-    ]
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AddressDoctor\\": "src/AddressDoctor/"
+        }
+    }
 }
